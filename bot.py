@@ -9,7 +9,7 @@ from aiogram.utils import executor
 # =========================================================================
 
 # !!! ВСТАВЬТЕ СЮДА ВАШ ТОКЕН !!!
-
+API_TOKEN = os.getenv('BOT_TOKEN')
 
 # Лимиты для осей (в градусах)
 A_MIN, A_MAX = -120.0, 120.0
@@ -254,4 +254,5 @@ async def handle_calculations(message: types.Message):
 if __name__ == '__main__':
     logging.info("Starting bot...")
     executor.start_polling(dp, skip_updates=True)
+
 
