@@ -138,7 +138,7 @@ def calculate_ac_from_ijk_zxz(I, J, K):
 async def send_welcome(message: types.Message):
     """Отправляет приветственное сообщение и инструкции."""
     await message.reply(
-        "👋 Привет! Я бот-калькулятор углов ZXZ.\n\n"
+        "Бот-калькулятор углов углов Эйлера для команды G68.2 (ZXZ).\n\n"
         f"**Лимиты:**\n"
         f"Ось A (вокруг X): [{A_MIN}°, {A_MAX}°]\n"
         f"Ось B (вокруг Y): [{B_MIN}°, {B_MAX}°]\n\n"
@@ -255,6 +255,7 @@ async def handle_calculations(message: types.Message):
 if __name__ == '__main__':
     logging.info("Starting bot...")
     executor.start_polling(dp, skip_updates=True)
+
 
 
 
