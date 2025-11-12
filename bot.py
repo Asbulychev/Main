@@ -1,6 +1,7 @@
 
 import numpy as np
 import logging
+import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 
@@ -254,5 +255,6 @@ async def handle_calculations(message: types.Message):
 if __name__ == '__main__':
     logging.info("Starting bot...")
     executor.start_polling(dp, skip_updates=True)
+
 
 
